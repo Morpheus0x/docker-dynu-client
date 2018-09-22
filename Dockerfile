@@ -1,5 +1,5 @@
 FROM alpine:3.7
-LABEL maintainer="cew1350@gmail.com"
+LABEL maintainer="morpheus0x@pm.me"
 
 RUN \
   apk update && \
