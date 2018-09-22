@@ -2,13 +2,15 @@
 
 Original Source: https://github.com/wcen/docker-dynu-client
 
-#### Create Account:
+
+## Create Account:
 
 Create Account: https://www.dynu.com/ to create your account
 
 Add new Dynamic DNS Domain: https://www.dynu.com/ControlPanel/DDNS
 
-#### Run Docker:
+
+## Run Docker:
 
 ```sh
 docker run -d --restart=always --name dynu-client \
@@ -18,7 +20,8 @@ docker run -d --restart=always --name dynu-client \
   morpheus0x/docker-dynu-client:latest
 ```
 
-#### Environment Variables:
+
+## Environment Variables:
 
 >MY_HOSTNAME: dynu domain (e.g. myname.dynu.net)
 >MY_USER: login name (e-mail or username)
