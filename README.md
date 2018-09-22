@@ -5,7 +5,6 @@ Original Source: https://github.com/wcen/docker-dynu-client
 ### Create Account:
 
 Create Account: https://www.dynu.com/ to create your account  
-
 Add new Dynamic DNS Domain: https://www.dynu.com/ControlPanel/DDNS  
 
 ### Run Docker:
