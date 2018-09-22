@@ -27,4 +27,4 @@ docker run -d --restart=always --name dynu-client \
 >MY_PASS: login password (will be sent encrypted via https to api.dynu.com)  
 >WAIT_TIME: 300 (time between sending updates in seconds) 
 
-Use these to set up the docker image on a NAS (e.g. QNAP)  
+Use these to set up the docker image on a NAS (e.g. QNAP Container Station)  
