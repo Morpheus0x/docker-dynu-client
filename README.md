@@ -1,18 +1,25 @@
 # docker-dynu-client
-### Login in https://www.dynu.com/en-US/ and get your ddns domain.
 
-__docker run__
+Original Source: https://github.com/wcen/docker-dynu-client
+
+#### Create Account:
+
+Create Account: https://www.dynu.com/ to create your account
+Add new Dynamic DNS Domain: https://www.dynu.com/ControlPanel/DDNS
+
+#### Run Docker:
 
 ```sh
 docker run -d --restart=always --name dynu-client \
   -e MY_HOSTNAME=$ddns_domain \
   -e MY_USER=$user \
   -e MY_PASS=$secret \
-  wcen/docker-dynu-client:latest
+  morpheus0x/docker-dynu-client:latest
 ```
 
-__parameters__
->MY_HOSTNAME: ddns domain  
->MY_USER: dynu login user (usally e-mail or account)  
->MY_PASS: can use encryption password  
+#### Environment Variables:
 
+>MY_HOSTNAME: dynu domain (e.g. myname.dynu.net)
+>MY_USER: login name (e-mail or username)
+>MY_PASS: login password (will be sent encrypted via https to api.dynu.com)
+>WAIT_TIME: 300 (time between sending updates in seconds)
