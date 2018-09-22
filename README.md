@@ -24,6 +24,9 @@ docker run -d --restart=always --name dynu-client \
 ## Environment Variables:
 
 >MY_HOSTNAME: dynu domain (e.g. myname.dynu.net)
+
 >MY_USER: login name (e-mail or username)
+
 >MY_PASS: login password (will be sent encrypted via https to api.dynu.com)
+
 >WAIT_TIME: 300 (time between sending updates in seconds)
